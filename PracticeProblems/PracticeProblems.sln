@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Arrays.Hard.ArrayManipul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Queues.Medium.QueueUsingStacks", "Ds.Queues.Medium.QueueUsingStacks\Ds.Queues.Medium.QueueUsingStacks.csproj", "{D22127A7-32FA-4014-B84D-F7D34A1F1992}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Stacks.Medium.BalancedBrackets", "Ds.Stacks.Medium.BalancedBrackets\Ds.Stacks.Medium.BalancedBrackets.csproj", "{05E7856F-EFDF-4519-A33D-E29E922588FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D22127A7-32FA-4014-B84D-F7D34A1F1992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D22127A7-32FA-4014-B84D-F7D34A1F1992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D22127A7-32FA-4014-B84D-F7D34A1F1992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05E7856F-EFDF-4519-A33D-E29E922588FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E7856F-EFDF-4519-A33D-E29E922588FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05E7856F-EFDF-4519-A33D-E29E922588FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E7856F-EFDF-4519-A33D-E29E922588FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
