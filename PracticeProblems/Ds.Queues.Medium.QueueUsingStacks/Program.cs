@@ -33,7 +33,6 @@
 
             public Stack<int> DequeueStack { get; set; }
 
-
             public StackyQueue()
             {
                 this.EnqueueStack = new Stack<int>();

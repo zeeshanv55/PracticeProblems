@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Stacks.Hard.PoisonousPla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Dp.CoinChange", "Algo.Dp.CoinChange\Algo.Dp.CoinChange.csproj", "{B440A5C6-E91D-47A2-85B5-755DE8D95181}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Queues.Hard.TruckTour", "Ds.Queues.Hard.TruckTour\Ds.Queues.Hard.TruckTour.csproj", "{041CB5BD-FE1C-40DC-A066-D06DF02DBB9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{B440A5C6-E91D-47A2-85B5-755DE8D95181}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B440A5C6-E91D-47A2-85B5-755DE8D95181}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B440A5C6-E91D-47A2-85B5-755DE8D95181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041CB5BD-FE1C-40DC-A066-D06DF02DBB9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041CB5BD-FE1C-40DC-A066-D06DF02DBB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041CB5BD-FE1C-40DC-A066-D06DF02DBB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041CB5BD-FE1C-40DC-A066-D06DF02DBB9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
