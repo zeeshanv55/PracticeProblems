@@ -31,13 +31,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Dp.CoinChange", "Algo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Queues.Hard.TruckTour", "Ds.Queues.Hard.TruckTour\Ds.Queues.Hard.TruckTour.csproj", "{041CB5BD-FE1C-40DC-A066-D06DF02DBB9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Queues.Medium.CastleOnGrid", "Ds.Queues.Medium.CastleOnGrid\Ds.Queues.Medium.CastleOnGrid.csproj", "{A77EBADD-DE9E-4F72-B6F0-E987135B03D2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Generic.Easy.MatrixRotation", "Algo.Generic.Easy.MatrixRotation\Algo.Generic.Easy.MatrixRotation.csproj", "{EF892EDE-6654-4F54-B083-E6048DA7932C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Generic.Easy.MatrixRotationInPlace", "Algo.Generic.Easy.MatrixRotationInPlace\Algo.Generic.Easy.MatrixRotationInPlace.csproj", "{5BA02C26-B458-4B0A-A8C9-ACC3E37C783A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Dp.PerfectSumWithIndices", "Algo.Dp.PerfectSumWithIndices\Algo.Dp.PerfectSumWithIndices.csproj", "{55DB2D29-1599-4C89-AC27-58F96456C5DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Search.Hard.MaximalSubarraySum", "Algo.Search.Hard.MaximalSubarraySum\Algo.Search.Hard.MaximalSubarraySum.csproj", "{E304DB32-20EB-478F-8F30-EB17D212A066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.NpComplete.SamsPuzzle", "Algo.NpComplete.SamsPuzzle\Algo.NpComplete.SamsPuzzle.csproj", "{92D7F1F0-8499-4DBE-80A4-5700AF985C88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Recursion.Easy.CountInversions", "Algo.Recursion.Easy.CountInversions\Algo.Recursion.Easy.CountInversions.csproj", "{0D8EF866-74D7-4FE5-BF2F-12248FC75330}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,10 +105,6 @@ Global
 		{041CB5BD-FE1C-40DC-A066-D06DF02DBB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{041CB5BD-FE1C-40DC-A066-D06DF02DBB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{041CB5BD-FE1C-40DC-A066-D06DF02DBB9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A77EBADD-DE9E-4F72-B6F0-E987135B03D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A77EBADD-DE9E-4F72-B6F0-E987135B03D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A77EBADD-DE9E-4F72-B6F0-E987135B03D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A77EBADD-DE9E-4F72-B6F0-E987135B03D2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EF892EDE-6654-4F54-B083-E6048DA7932C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EF892EDE-6654-4F54-B083-E6048DA7932C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF892EDE-6654-4F54-B083-E6048DA7932C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -117,6 +117,18 @@ Global
 		{55DB2D29-1599-4C89-AC27-58F96456C5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55DB2D29-1599-4C89-AC27-58F96456C5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55DB2D29-1599-4C89-AC27-58F96456C5DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E304DB32-20EB-478F-8F30-EB17D212A066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E304DB32-20EB-478F-8F30-EB17D212A066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E304DB32-20EB-478F-8F30-EB17D212A066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E304DB32-20EB-478F-8F30-EB17D212A066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92D7F1F0-8499-4DBE-80A4-5700AF985C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D7F1F0-8499-4DBE-80A4-5700AF985C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D7F1F0-8499-4DBE-80A4-5700AF985C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D7F1F0-8499-4DBE-80A4-5700AF985C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D8EF866-74D7-4FE5-BF2F-12248FC75330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D8EF866-74D7-4FE5-BF2F-12248FC75330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D8EF866-74D7-4FE5-BF2F-12248FC75330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D8EF866-74D7-4FE5-BF2F-12248FC75330}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
