@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Heaps.Easy.Basic", "Ds.H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.Medium.DijkstraMinPath", "Ds.Graphs.Medium.DijkstraMinPath\Ds.Graphs.Medium.DijkstraMinPath.csproj", "{48BEE960-EA39-463B-8782-59130B5782FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Heaps.Easy.MedianMaintainance", "Ds.Heaps.Easy.MedianMaintainance\Ds.Heaps.Easy.MedianMaintainance.csproj", "{A632296C-46DA-4B5E-B6F9-302C455E2C64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{48BEE960-EA39-463B-8782-59130B5782FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48BEE960-EA39-463B-8782-59130B5782FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48BEE960-EA39-463B-8782-59130B5782FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A632296C-46DA-4B5E-B6F9-302C455E2C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A632296C-46DA-4B5E-B6F9-302C455E2C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A632296C-46DA-4B5E-B6F9-302C455E2C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A632296C-46DA-4B5E-B6F9-302C455E2C64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
