@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.Medium.DijkstraMi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Heaps.Easy.MedianMaintainance", "Ds.Heaps.Easy.MedianMaintainance\Ds.Heaps.Easy.MedianMaintainance.csproj", "{A632296C-46DA-4B5E-B6F9-302C455E2C64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Hashsets.Easy.TwoSumProblem", "Ds.Hashsets.Easy.TwoSumProblem\Ds.Hashsets.Easy.TwoSumProblem.csproj", "{942F04E2-9F05-4296-A11F-DA731587FA81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{A632296C-46DA-4B5E-B6F9-302C455E2C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A632296C-46DA-4B5E-B6F9-302C455E2C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A632296C-46DA-4B5E-B6F9-302C455E2C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942F04E2-9F05-4296-A11F-DA731587FA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942F04E2-9F05-4296-A11F-DA731587FA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942F04E2-9F05-4296-A11F-DA731587FA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942F04E2-9F05-4296-A11F-DA731587FA81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
