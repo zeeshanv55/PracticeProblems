@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Heaps.Easy.MedianMaintai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Hashsets.Easy.TwoSumProblem", "Ds.Hashsets.Easy.TwoSumProblem\Ds.Hashsets.Easy.TwoSumProblem.csproj", "{942F04E2-9F05-4296-A11F-DA731587FA81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Recursion.KaratsubaMultiplication", "Algo.Recursion.KaratsubaMultiplication\Algo.Recursion.KaratsubaMultiplication.csproj", "{01135586-9463-4693-9CB6-62953F4E058E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,10 @@ Global
 		{942F04E2-9F05-4296-A11F-DA731587FA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{942F04E2-9F05-4296-A11F-DA731587FA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{942F04E2-9F05-4296-A11F-DA731587FA81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01135586-9463-4693-9CB6-62953F4E058E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01135586-9463-4693-9CB6-62953F4E058E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01135586-9463-4693-9CB6-62953F4E058E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01135586-9463-4693-9CB6-62953F4E058E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
