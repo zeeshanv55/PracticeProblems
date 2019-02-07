@@ -61,6 +61,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Recursion.KaratsubaMul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Bst.Easy.Basic", "Ds.Bst.Easy.Basic\Ds.Bst.Easy.Basic.csproj", "{1C1A8940-12FE-46C6-AEF7-059E8FE074D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Greedy.Easy.Scheduling", "Algo.Greedy.Easy.Scheduling\Algo.Greedy.Easy.Scheduling.csproj", "{0A1B0E35-9E73-4D2F-A09B-A76FE1F212DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.Easy.PrimsMst", "Ds.Graphs.Easy.PrimsMst\Ds.Graphs.Easy.PrimsMst.csproj", "{80268BC3-D135-4D03-86BF-B2F3F1ED1DAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +187,14 @@ Global
 		{1C1A8940-12FE-46C6-AEF7-059E8FE074D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C1A8940-12FE-46C6-AEF7-059E8FE074D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C1A8940-12FE-46C6-AEF7-059E8FE074D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A1B0E35-9E73-4D2F-A09B-A76FE1F212DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A1B0E35-9E73-4D2F-A09B-A76FE1F212DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A1B0E35-9E73-4D2F-A09B-A76FE1F212DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A1B0E35-9E73-4D2F-A09B-A76FE1F212DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80268BC3-D135-4D03-86BF-B2F3F1ED1DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80268BC3-D135-4D03-86BF-B2F3F1ED1DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80268BC3-D135-4D03-86BF-B2F3F1ED1DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80268BC3-D135-4D03-86BF-B2F3F1ED1DAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

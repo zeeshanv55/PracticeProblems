@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ds.Graphs.Medium.DijkstraMinPath
+﻿namespace Ds.Graphs.Medium.DijkstraMinPath
 {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+
     class Program
     {
         const int N = 200;
