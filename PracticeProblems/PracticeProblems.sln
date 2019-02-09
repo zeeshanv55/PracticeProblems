@@ -65,6 +65,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Greedy.Easy.Scheduling
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.Easy.PrimsMst", "Ds.Graphs.Easy.PrimsMst\Ds.Graphs.Easy.PrimsMst.csproj", "{80268BC3-D135-4D03-86BF-B2F3F1ED1DAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Greedy.MaxSpaceKClustering", "Algo.Greedy.MaxSpaceKClustering\Algo.Greedy.MaxSpaceKClustering.csproj", "{81709361-6930-44A9-8F7D-14429DD097A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Greedy.MaxSpaceKClusteringReverse", "Algo.Greedy.MaxSpaceKClusteringReverse\Algo.Greedy.MaxSpaceKClusteringReverse.csproj", "{FFF79988-B10C-4680-A0DA-24B750F02038}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +199,14 @@ Global
 		{80268BC3-D135-4D03-86BF-B2F3F1ED1DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80268BC3-D135-4D03-86BF-B2F3F1ED1DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80268BC3-D135-4D03-86BF-B2F3F1ED1DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81709361-6930-44A9-8F7D-14429DD097A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81709361-6930-44A9-8F7D-14429DD097A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81709361-6930-44A9-8F7D-14429DD097A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81709361-6930-44A9-8F7D-14429DD097A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF79988-B10C-4680-A0DA-24B750F02038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF79988-B10C-4680-A0DA-24B750F02038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF79988-B10C-4680-A0DA-24B750F02038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF79988-B10C-4680-A0DA-24B750F02038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
