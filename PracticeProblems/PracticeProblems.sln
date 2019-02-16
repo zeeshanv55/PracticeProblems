@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Greedy.MaxSpaceKCluste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Greedy.HuffmanCodes", "Algo.Greedy.HuffmanCodes\Algo.Greedy.HuffmanCodes.csproj", "{23DA83E5-91AA-4A99-8FA4-DFD1C26F5BE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Dp.MaxWeightIndependentSet", "Algo.Dp.MaxWeightIndependentSet\Algo.Dp.MaxWeightIndependentSet.csproj", "{DF0EFBF3-6B56-44B2-BFE9-A3133A51CD49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +215,10 @@ Global
 		{23DA83E5-91AA-4A99-8FA4-DFD1C26F5BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23DA83E5-91AA-4A99-8FA4-DFD1C26F5BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23DA83E5-91AA-4A99-8FA4-DFD1C26F5BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0EFBF3-6B56-44B2-BFE9-A3133A51CD49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0EFBF3-6B56-44B2-BFE9-A3133A51CD49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0EFBF3-6B56-44B2-BFE9-A3133A51CD49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0EFBF3-6B56-44B2-BFE9-A3133A51CD49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
