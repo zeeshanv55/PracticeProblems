@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B440A5C6-E91D-47A2-85B5-755DE8D95181}</ProjectGuid>
+    <ProjectGuid>{B225352D-3177-47F6-9977-06277EBF0209}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Algo.Dp.CoinChange</RootNamespace>
     <AssemblyName>Algo.Dp.CoinChange</AssemblyName>

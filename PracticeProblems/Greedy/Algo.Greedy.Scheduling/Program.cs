@@ -1,4 +1,4 @@
-﻿namespace Algo.Greedy.Easy.Scheduling
+﻿namespace Algo.Greedy.Scheduling
 {
     using System;
     using System.IO;
