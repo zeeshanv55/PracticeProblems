@@ -75,6 +75,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Dp.MaxWeightIndependen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Dp.Knapsack", "Algo.Dp.Knapsack\Algo.Dp.Knapsack.csproj", "{EFE90409-24F7-492F-BB37-DEAAE36755CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Dp.BellmanFord", "Algo.Dp.BellmanFord\Algo.Dp.BellmanFord.csproj", "{3DB6AAF6-BBB1-4C27-AA8F-1521327D684A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.Dp.FloydWarshall", "Algo.Dp.FloydWarshall\Algo.Dp.FloydWarshall.csproj", "{9402E017-3C97-4692-9C45-EB5072748353}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +229,14 @@ Global
 		{EFE90409-24F7-492F-BB37-DEAAE36755CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFE90409-24F7-492F-BB37-DEAAE36755CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFE90409-24F7-492F-BB37-DEAAE36755CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB6AAF6-BBB1-4C27-AA8F-1521327D684A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB6AAF6-BBB1-4C27-AA8F-1521327D684A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB6AAF6-BBB1-4C27-AA8F-1521327D684A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB6AAF6-BBB1-4C27-AA8F-1521327D684A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9402E017-3C97-4692-9C45-EB5072748353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9402E017-3C97-4692-9C45-EB5072748353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9402E017-3C97-4692-9C45-EB5072748353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9402E017-3C97-4692-9C45-EB5072748353}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
