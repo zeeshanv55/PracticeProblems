@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Ds.Graphs.Easy.PrimsMst")]
+[assembly: AssemblyTitle("Ds.Graphs.Dfs.Recursive")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Ds.Graphs.Easy.PrimsMst")]
+[assembly: AssemblyProduct("Ds.Graphs.Dfs.Recursive")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("80268bc3-d135-4d03-86bf-b2f3f1ed1dae")]
+[assembly: Guid("169784aa-f989-42ce-9193-622fb1184ecf")]
 
 // Version information for an assembly consists of the following four values:
 //

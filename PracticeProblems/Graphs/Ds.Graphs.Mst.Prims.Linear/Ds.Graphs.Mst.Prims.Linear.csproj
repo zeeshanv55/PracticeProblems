@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{80268BC3-D135-4D03-86BF-B2F3F1ED1DAE}</ProjectGuid>
+    <ProjectGuid>{0620C5D5-539D-4D80-8D44-F6A9CE05F554}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ds.Graphs.Easy.PrimsMst</RootNamespace>
-    <AssemblyName>Ds.Graphs.Easy.PrimsMst</AssemblyName>
+    <RootNamespace>Ds.Graphs.Mst.Prims.Linear</RootNamespace>
+    <AssemblyName>Ds.Graphs.Mst.Prims.Linear</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
