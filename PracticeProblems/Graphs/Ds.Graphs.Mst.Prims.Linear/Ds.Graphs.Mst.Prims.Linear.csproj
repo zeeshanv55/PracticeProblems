@@ -54,5 +54,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ds.Graphs.Repository\Ds.Graphs.Repository.csproj">
+      <Project>{bc737bce-438a-4819-9765-8abbba7bbfd4}</Project>
+      <Name>Ds.Graphs.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

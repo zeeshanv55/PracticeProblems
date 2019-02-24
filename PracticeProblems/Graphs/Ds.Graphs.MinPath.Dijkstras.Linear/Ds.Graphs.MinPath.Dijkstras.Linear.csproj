@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DCB15C5B-40E9-41FB-AE68-C4D688659289}</ProjectGuid>
+    <ProjectGuid>{06EF45F0-625C-4D3A-AEF7-0A84570B3EBF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ds.Graphs.Bfs.Queue</RootNamespace>
-    <AssemblyName>Ds.Graphs.Bfs.Queue</AssemblyName>
+    <RootNamespace>Ds.Graphs.Dijkstras.Linear</RootNamespace>
+    <AssemblyName>Ds.Graphs.Dijkstras.Linear</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,11 @@
       <Project>{bc737bce-438a-4819-9765-8abbba7bbfd4}</Project>
       <Name>Ds.Graphs.Repository</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
