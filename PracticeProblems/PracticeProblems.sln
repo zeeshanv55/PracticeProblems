@@ -93,6 +93,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.Repository", "Gra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.MinPath.Dijkstras.Linear", "Graphs\Ds.Graphs.MinPath.Dijkstras.Linear\Ds.Graphs.MinPath.Dijkstras.Linear.csproj", "{06EF45F0-625C-4D3A-AEF7-0A84570B3EBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.TravellingSalesman", "Ds.Graphs.TravellingSalesman\Ds.Graphs.TravellingSalesman.csproj", "{E9BC844B-E289-4599-9E63-3243AB1D9457}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,10 @@ Global
 		{06EF45F0-625C-4D3A-AEF7-0A84570B3EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06EF45F0-625C-4D3A-AEF7-0A84570B3EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06EF45F0-625C-4D3A-AEF7-0A84570B3EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9BC844B-E289-4599-9E63-3243AB1D9457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9BC844B-E289-4599-9E63-3243AB1D9457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9BC844B-E289-4599-9E63-3243AB1D9457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9BC844B-E289-4599-9E63-3243AB1D9457}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -288,6 +294,7 @@ Global
 		{0620C5D5-539D-4D80-8D44-F6A9CE05F554} = {D0C8B049-5448-4A1A-8FB1-0D289989103C}
 		{BC737BCE-438A-4819-9765-8ABBBA7BBFD4} = {D0C8B049-5448-4A1A-8FB1-0D289989103C}
 		{06EF45F0-625C-4D3A-AEF7-0A84570B3EBF} = {D0C8B049-5448-4A1A-8FB1-0D289989103C}
+		{E9BC844B-E289-4599-9E63-3243AB1D9457} = {D0C8B049-5448-4A1A-8FB1-0D289989103C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E553AC94-604C-4419-830A-EA62B6040E26}
