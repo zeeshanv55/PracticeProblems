@@ -17,10 +17,10 @@
             var sum = 0;
             foreach (var item in obj.Item2)
             {
-                sum += item;
+                sum = sum + item + (item * item);
             }
 
-            return (int)(Math.Pow(10, Math.Floor(Math.Log10(sum) + 1)) * obj.Item1) + (obj.Item2.Count == 0 ? 0 : (sum % obj.Item2.Count));
+            return sum * obj.Item1;
         }
     }
 
