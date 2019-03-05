@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.IO;
+    using System.Linq;
     using Ds.Graphs.Repository;
 
     class TupleHashSetComparer : IEqualityComparer<Tuple<int, HashSet<int>>>
@@ -42,41 +43,44 @@
         }
     }
 
-    class TravellingSalesman
+    class TravellingSalesmanRunner : IDisposable
     {
-        public WeightedGraph Graph { get; set; }
-
         private Dictionary<Tuple<int, HashSet<int>>, double> Dp { get; set; }
 
-        public TravellingSalesman(WeightedGraph graph)
+        public WeightedGraph Graph { get; set; }
+
+        public TravellingSalesmanRunner(WeightedGraph graph, Dictionary<Tuple<int, HashSet<int>>, double> dp)
         {
-            this.Graph = graph;
+            this.Graph = new WeightedGraph(graph);
+            this.Dp = new Dictionary<Tuple<int, HashSet<int>>, double>(dp);
         }
 
-        public double Run()
+        ~TravellingSalesmanRunner()
         {
-            this.InitializeDp();
+            this.Dp = null;
+        }
 
-            for (var k = 0; k < this.Graph.VertexCount - 1; k++)
+        public Dictionary<Tuple<int, HashSet<int>>, double> RunIteration(double maxDistance)
+        {
+            var nextDp = new Dictionary<Tuple<int, HashSet<int>>, double>(new TupleHashSetComparer());
+
+            foreach (var dpPoint in this.Dp)
             {
-                Console.WriteLine($"Checking sets with cardinality: {k + 1}. Last iteraton size was: {this.Dp.Count}.");
-                var nextDp = new Dictionary<Tuple<int, HashSet<int>>, double>(new TupleHashSetComparer());
-
-                foreach (var dpPoint in this.Dp)
+                for (var i = 1; i < this.Graph.VertexCount; i++)
                 {
-                    for (var i = 1; i < this.Graph.VertexCount; i++)
+                    if (dpPoint.Key.Item1 == i || dpPoint.Key.Item2.Contains(i))
                     {
-                        if (dpPoint.Key.Item1 == i || dpPoint.Key.Item2.Contains(i))
-                        {
-                            continue;
-                        }
-                        else
-                        {
-                            var newParsedSet = new HashSet<int>(dpPoint.Key.Item2);
-                            newParsedSet.Add(dpPoint.Key.Item1);
+                        continue;
+                    }
+                    else
+                    {
+                        var newParsedSet = new HashSet<int>(dpPoint.Key.Item2);
+                        newParsedSet.Add(dpPoint.Key.Item1);
 
-                            var newDistance = dpPoint.Value + this.Graph.AdjacencyArray[dpPoint.Key.Item1][i];
+                        var newDistance = dpPoint.Value + this.Graph.AdjacencyArray[dpPoint.Key.Item1][i];
 
+                        if (newDistance <= maxDistance)
+                        {
                             var newDpKey = new Tuple<int, HashSet<int>>(i, newParsedSet);
 
                             if (nextDp.ContainsKey(newDpKey))
@@ -93,8 +97,99 @@
                         }
                     }
                 }
+            }
 
-                this.Dp = nextDp;
+            return nextDp;
+        }
+
+        public Dictionary<Tuple<int, HashSet<int>>, double> RunQuickIteration(int maxCount, double maxDistance)
+        {
+            var nextDp = new Dictionary<Tuple<int, HashSet<int>>, double>(new TupleHashSetComparer());
+            var dpList = this.Dp.ToList();
+            dpList.Sort((pair1, pair2) => pair1.Value.CompareTo(pair2.Value));
+
+            foreach (var dpPoint in dpList)
+            {
+                for (var i = 1; i < this.Graph.VertexCount; i++)
+                {
+                    if (dpPoint.Key.Item1 == i || dpPoint.Key.Item2.Contains(i))
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        var newParsedSet = new HashSet<int>(dpPoint.Key.Item2);
+                        newParsedSet.Add(dpPoint.Key.Item1);
+
+                        var newDistance = dpPoint.Value + this.Graph.AdjacencyArray[dpPoint.Key.Item1][i];
+
+                        if (newDistance <= maxDistance)
+                        {
+                            var newDpKey = new Tuple<int, HashSet<int>>(i, newParsedSet);
+
+                            if (nextDp.ContainsKey(newDpKey))
+                            {
+                                if (newDistance < nextDp[newDpKey])
+                                {
+                                    nextDp[newDpKey] = newDistance;
+                                }
+                            }
+                            else
+                            {
+                                nextDp.Add(newDpKey, newDistance);
+                                if (nextDp.Count == maxCount)
+                                {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if (nextDp.Count == maxCount)
+                {
+                    break;
+                }
+            }
+
+            return nextDp;
+        }
+
+        public void Dispose()
+        {
+            this.Graph.Dispose();
+            this.Dp.Clear();
+        }
+    }
+
+    class TravellingSalesman
+    {
+        public WeightedGraph Graph { get; set; }
+
+        private Dictionary<Tuple<int, HashSet<int>>, double> Dp { get; set; }
+
+        private double[] MaxPathLengthAtStep { get; set; }
+
+        private double HeuristicPathLength { get; set; }
+
+        public TravellingSalesman(WeightedGraph graph)
+        {
+            this.Graph = graph;
+        }
+
+        public double Run()
+        {
+            this.InitializeHeuristics(new List<int> { 100, 2000, 10000, 20000, 100000, 200000, 1000000 });
+            this.InitializeDp();
+
+            for (var k = 0; k < this.Graph.VertexCount - 1; k++)
+            {
+                using (var iterationRunner = new TravellingSalesmanRunner(this.Graph, this.Dp))
+                {
+                    Console.WriteLine($"Checking sets with cardinality: {k + 1}. Max path length allowed: {this.MaxPathLengthAtStep[k]}. Last iteraton size was: {this.Dp.Count}.");
+                    var nextDp = iterationRunner.RunIteration(this.MaxPathLengthAtStep[k]);
+                    this.Dp = new Dictionary<Tuple<int, HashSet<int>>, double>(nextDp);
+                }
             }
 
             var min = double.PositiveInfinity;
@@ -108,6 +203,51 @@
             }
 
             return min;
+        }
+
+        private void InitializeHeuristics(List<int> maxDpSizes)
+        {
+            var currentHeuristicDistance = double.PositiveInfinity;
+            var maxLengthAtStep = new double[this.Graph.VertexCount - 1];
+
+            for (var k = 0; k < this.Graph.VertexCount - 1; k++)
+            {
+                maxLengthAtStep[k] = double.PositiveInfinity;
+            }
+
+            foreach (var maxDpSize in maxDpSizes)
+            {
+                Console.WriteLine($"\nMax DP size allowed: {maxDpSize}");
+                this.InitializeDp();
+
+                for (var k = 0; k < this.Graph.VertexCount - 1; k++)
+                {
+                    using (var iterationRunner = new TravellingSalesmanRunner(this.Graph, this.Dp))
+                    {
+                        Console.WriteLine($"Heuristically checking sets with cardinality: {k + 1}. Max path length allowed: {maxLengthAtStep[k]}. Last iteraton size was: {this.Dp.Count}.");
+                        var nextDp = iterationRunner.RunQuickIteration(maxDpSize, maxLengthAtStep[k]);
+
+                        this.Dp = new Dictionary<Tuple<int, HashSet<int>>, double>(nextDp);
+                        maxLengthAtStep[k] = nextDp.Values.Max();
+                    }
+                }
+
+                var min = double.PositiveInfinity;
+                foreach (var dpPoint in this.Dp)
+                {
+                    var currentDistance = dpPoint.Value + this.Graph.AdjacencyArray[dpPoint.Key.Item1][0];
+                    if (currentDistance < min)
+                    {
+                        min = currentDistance;
+                    }
+                }
+
+                currentHeuristicDistance = min;
+                Console.WriteLine($"Current heuristic path length: {currentHeuristicDistance}.");
+            }
+
+            this.HeuristicPathLength = currentHeuristicDistance;
+            this.MaxPathLengthAtStep = maxLengthAtStep;
         }
 
         private void InitializeDp()
