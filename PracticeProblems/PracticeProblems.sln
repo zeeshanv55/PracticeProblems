@@ -95,6 +95,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.MinPath.Dijkstras
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.TravellingSalesman", "Ds.Graphs.TravellingSalesman\Ds.Graphs.TravellingSalesman.csproj", "{E9BC844B-E289-4599-9E63-3243AB1D9457}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.TravellingSalesman.NearestNeighbour", "Ds.Graphs.TravellingSalesman.NearestNeighbour\Ds.Graphs.TravellingSalesman.NearestNeighbour.csproj", "{E795FBFA-481D-4C97-89B7-F1BBD8C1F079}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -273,6 +275,10 @@ Global
 		{E9BC844B-E289-4599-9E63-3243AB1D9457}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9BC844B-E289-4599-9E63-3243AB1D9457}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9BC844B-E289-4599-9E63-3243AB1D9457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E795FBFA-481D-4C97-89B7-F1BBD8C1F079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E795FBFA-481D-4C97-89B7-F1BBD8C1F079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E795FBFA-481D-4C97-89B7-F1BBD8C1F079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E795FBFA-481D-4C97-89B7-F1BBD8C1F079}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -295,6 +301,7 @@ Global
 		{BC737BCE-438A-4819-9765-8ABBBA7BBFD4} = {D0C8B049-5448-4A1A-8FB1-0D289989103C}
 		{06EF45F0-625C-4D3A-AEF7-0A84570B3EBF} = {D0C8B049-5448-4A1A-8FB1-0D289989103C}
 		{E9BC844B-E289-4599-9E63-3243AB1D9457} = {D0C8B049-5448-4A1A-8FB1-0D289989103C}
+		{E795FBFA-481D-4C97-89B7-F1BBD8C1F079} = {D0C8B049-5448-4A1A-8FB1-0D289989103C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E553AC94-604C-4419-830A-EA62B6040E26}
