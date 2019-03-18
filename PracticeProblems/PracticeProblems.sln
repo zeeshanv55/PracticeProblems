@@ -97,6 +97,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.TravellingSalesma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds.Graphs.TravellingSalesman.NearestNeighbour", "Ds.Graphs.TravellingSalesman.NearestNeighbour\Ds.Graphs.TravellingSalesman.NearestNeighbour.csproj", "{E795FBFA-481D-4C97-89B7-F1BBD8C1F079}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Miscellaneous", "Miscellaneous", "{2A35572B-6E76-4999-9ACC-6645A277C58C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo.2Sat.Papadimitriou", "Algo.2Sat.Papadimitriou\Algo.2Sat.Papadimitriou.csproj", "{5AEB052A-32C4-4DA1-A991-FE15EE9DDFB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -279,6 +283,10 @@ Global
 		{E795FBFA-481D-4C97-89B7-F1BBD8C1F079}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E795FBFA-481D-4C97-89B7-F1BBD8C1F079}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E795FBFA-481D-4C97-89B7-F1BBD8C1F079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AEB052A-32C4-4DA1-A991-FE15EE9DDFB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AEB052A-32C4-4DA1-A991-FE15EE9DDFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AEB052A-32C4-4DA1-A991-FE15EE9DDFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AEB052A-32C4-4DA1-A991-FE15EE9DDFB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -302,6 +310,7 @@ Global
 		{06EF45F0-625C-4D3A-AEF7-0A84570B3EBF} = {D0C8B049-5448-4A1A-8FB1-0D289989103C}
 		{E9BC844B-E289-4599-9E63-3243AB1D9457} = {D0C8B049-5448-4A1A-8FB1-0D289989103C}
 		{E795FBFA-481D-4C97-89B7-F1BBD8C1F079} = {D0C8B049-5448-4A1A-8FB1-0D289989103C}
+		{5AEB052A-32C4-4DA1-A991-FE15EE9DDFB8} = {2A35572B-6E76-4999-9ACC-6645A277C58C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E553AC94-604C-4419-830A-EA62B6040E26}
